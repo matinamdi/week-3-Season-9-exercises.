@@ -1,0 +1,560 @@
+Matin Ahmadi Rouzbahani
+40113841054052
+Week 3
+Season 9 exercises
+
+
+Answer 1:
+
+In Python, a class is a blueprint or a template for creating objects, while an object is an instance of a class. 
+
+A class defines the attributes and methods that an object will have, but it does not actually create the object itself. It is like a blueprint that describes how an object should be constructed.
+
+An object, on the other hand, is a specific instance of a class. It is created from the blueprint defined by the class and has its own unique set of attributes and methods.
+
+In summary, a class defines the characteristics of objects that can be created from it, while an object is an instance of that class with its own unique properties.
+
+Answer 2:
+
+Some other names for instance variables in Python are:
+
+1. Object attributes
+2. Object properties
+3. Instance attributes
+4. Instance properties
+5. Member variables
+
+Answer 3:
+
+Function.
+
+Answer 4:
+
+The dot (.) symbol associates an object with a method invocation in Python.
+
+Answer 5:
+
+a function is a block of code that performs a specific task and returns a value (if necessary). A method, on the other hand, is a function that is associated with an object and can access its data.
+
+Here are some key differences between methods and functions in Python:
+
+1. Syntax: A function is defined using the "def" keyword followed by the function name and parameters (if any). A method is defined inside a class using the same syntax as a function, but it is called on an instance of the class.
+
+2. Scope: Functions are standalone entities that can be called from anywhere in the program. Methods are bound to objects and can only be called on instances of that object.
+
+3. Access to data: Methods have access to the data stored in an object's attributes, while functions do not.
+
+4. Return value: Both functions and methods can return values, but methods often modify the state of an object as well.
+
+In summary, while both functions and methods perform tasks in Python, methods are specific to objects and have access to their data.
+
+Answer 6:
+
+The method is called 
+strip()
+.
+Answer 7:
+
+The len() function returns the length of its string argument.
+
+Answer 8 :
+
+The open function in Python returns a file object.
+
+Answer 9:
+
+The second parameter of the open function in Python represents the mode in which the file is opened. It specifies whether the file is being opened for reading, writing, or both. The mode can be specified using a string that contains one or more of the following characters:
+
+- 'r': read mode (default)
+- 'w': write mode
+- 'x': exclusive creation mode
+- 'a': append mode
+- 'b': binary mode
+- '+': read and write mode
+
+For example, to open a file for writing in binary mode, you would use the following code:
+
+
+file = open('filename', 'wb')
+
+Answer 10: 
+
+Here's the Python code to store the first 100 integers to a text file named numbers.txt:
+
+
+# Open the file for writing
+with open("numbers.txt", "w") as f:
+    # Write the first 100 integers to the file
+    for i in range(1, 101):
+        f.write(str(i) + "\n")
+
+
+Explanation:
+
+- We use the open() function to open a file named "numbers.txt" in write mode ("w").
+- We use a with statement to ensure that the file is properly closed after we're done writing to it.
+- We use a for loop to iterate over the range of integers from 1 to 100 (range(1, 101)).
+- For each integer, we convert it to a string using str(i) and append a newline character ("\n") so that each number appears on its own line.
+- We use the write() method of the file object (f.write()) to write each number (as a string) to the file.
+
+Answer 11:
+
+def sumfile(filename):
+    total = 0
+    with open(filename, 'r') as file:
+        for line in file:
+            total += int(line)
+    return total
+
+Answer 12:
+
+(A) The syntactic sugar for the sub method is the subtraction operator (-).
+
+(B) The syntactic sugar for the eq method is the equality operator (==).
+
+(C) The syntactic sugar for the neg method is the negation operator (-) when used before an instance of the Fraction class.
+
+(D) The syntactic sugar for the gt method is the greater than operator (>).
+
+/////////
+
+(A) sub: -
+
+(B) eq: ==
+
+(C) neg: -
+
+(D) gt: >
+
+Answer 13:
+
+Using a Turtle object from Python's Turtle graphics module allows you to create and manipulate a specific turtle instance, while using the free .functions operates on the default turtle instance. 
+
+For example, if you create a Turtle object named "t" using the code "t = turtle.Turtle()", you can then use methods such as "t.penup()" to lift the pen off the canvas for that specific turtle instance. If you were to use the free function "penup()", it would lift the pen off the canvas for the default turtle instance.
+
+In summary, using a Turtle object allows for more control and specificity in manipulating individual turtles, while using free functions operates on a default turtle instance.
+
+Answer 14:
+
+It is impossible to draw the shape here, that's why I write the code
+
+Sample code:
+
+
+import turtle
+
+# Create a Turtle object
+t = turtle.Turtle()
+
+# Draw a square
+for i in range(4):
+    t.forward(100)
+    t.right(90)
+
+# Draw a triangle
+for i in range(3):
+    t.forward(100)
+    t.left(120)
+
+# Draw a circle
+t.circle(50)
+
+# Draw a star
+for i in range(5):
+    t.forward(100)
+    t.right(144)
+
+# Hide the Turtle object
+t.hideturtle()
+
+# Keep the window open until closed manually
+turtle.done()
+`
+
+Using the Turtle graphic module, this code can be changed to draw different shapes and patterns
+
+/////
+Triangle code :
+
+def turtle():
+    while True:
+        import turtle
+        t = turtle.Turtle()
+        window = turtle.Screen()
+        t.forward(100)
+        t.left(120)
+        t.forward(100)
+        t.left(120)
+        t.forward(100)
+turtle()
+
+/////
+
+circle code:
+
+from turtle import*
+color('red' , 'yellow')
+shape('turtle')
+speed('fastest')
+circle(100)
+
+////
+
+star code:
+
+import turtle
+s=turtle.getscreen ()
+t=turtle.Turtle ()
+for i in range (5):
+      t.fd(200)
+      t.rt(144)
+
+/////
+
+Square code:
+
+import turtle
+t = turtle.Pen()
+t.forward(90)
+t.left(90)
+t.forward(90)
+t.left(90)
+t.forward(90)
+t.left(90)
+t.forward(90)
+t.left(90)
+
+/////
+Line shape code:
+from turtle import * 
+t = Turtle();
+t.pensize(5) 
+t.left(75); 
+t.forward(150); 
+right_bool = True; 
+for i in range(9): 
+if right_bool: 
+       t.right(150); 
+else: 
+        t.left(150); 
+t.forward(150); 
+right_bool = not right_bool 
+t.hideturtle(); 
+exitonclick();
+///////
+Four square code:
+from turtle import *
+def create_square(amount): 
+for i in range(amount): 
+           for i in range(4): 
+                    t.forward(20); 
+t.right(90); 
+t.penup(); 
+t.forward(20); 
+t.pendown(); 
+t = Turtle(); 
+t.pensize(5) 
+t.left(90); 
+x = 0; 
+for i in range(5): 
+t.penup(); 
+t.setposition(x, 0); 
+t.pendown(); 
+create_square(5) 
+x += 20;
+t.hideturtle(); 
+exitonclick();
+//////
+Answer 15:
+
+No, Python strings are immutable, which means that once a string is created, it cannot be modified. However, you can create a new string by concatenating parts of the original string with the desired change.
+
+
+Answer 16:
+
+If a turtle.Turtle object were immutable in Python, it would not be possible to change its properties or attributes after it has been created. This would limit the ability to manipulate the turtle's position, orientation, color, and other characteristics that are essential for creating complex graphics and animations.
+
+For example, if the turtle object were immutable, it would not be possible to move the turtle forward or backward using the forward() or backward() methods. Similarly, it would not be possible to change the turtle's color using the color() method or change its pen size using the pensize() method.
+
+Overall, making a turtle.Turtle object immutable would severely limit its usefulness for creating dynamic and interactive graphics in Python. Therefore, it is important that turtle objects remain mutable so that they can be manipulated and customized as needed.
+
+
+Answer 17:
+
+In programming, garbage refers to the memory space that is no longer being used by a program but has not been released back to the operating system. This can occur when a program creates objects or variables in memory and then no longer needs them, but fails to properly delete or release them. Over time, this can lead to memory leaks and cause the program to slow down or crash. Garbage collection is the process of automatically identifying and removing unused memory in a program.
+
+Answer 18:
+
+
+Garbage collection is the process of automatically freeing up memory that is no longer being used by a program. In Python, garbage collection is handled by the Python interpreter itself. Python uses a technique called reference counting to keep track of objects in memory.  Cyclic garbage collection works by periodically scanning all objects in memory and identifying any groups of objects that are only referenced by each other (i.e., cyclic references). These groups of objects are then marked as garbage and can be safely deleted.
+
+Overall, Python's garbage collection system allows programmers to focus on writing code without worrying too much about managing memory manually.
+The Python interpreter cleans up 
+garbage through a process called garbage collection. Python uses a reference counting garbage collector 
+that automatically reclaims the space occupied by abandoned objects.
+
+Answer 19:
+
+(A) The reference count for the string object "ABC" is 0 at the end of this code's execution, as there are no variables or objects referencing it.
+
+(B) No, b is not an alias of a at the end of this code's execution. When b was assigned to a, it was pointing to the same object as a. However, when a was reassigned to "XYZ", b still points to the old object "ABC". Therefore, b and a are no longer aliases.
+
+(C) Yes, b is an alias of c at the end of this code's execution. When c was assigned to b, it was pointing to the same object as a (which was "ABC" at that time). Later on, when a was reassigned to "XYZ", c still points to the old object "ABC". Therefore, b and c are still aliases.
+
+Persian meaning:
+
+پاسخ 1:
+
+در پایتون، یک کلاس یک طرح اولیه یا یک الگو برای ایجاد اشیا است، در حالی که یک شی نمونه ای از یک کلاس است.
+
+یک کلاس ویژگی ها و متدهایی را که یک شی خواهد داشت تعریف می کند، اما در واقع خود شی را ایجاد نمی کند.  مانند طرحی است که نحوه ساخت یک شی را توضیح می دهد.
+
+از سوی دیگر، یک شیء، یک نمونه خاص از یک کلاس است.  از طرح تعریف شده توسط کلاس ایجاد می شود و مجموعه ای از ویژگی ها و متدهای منحصر به فرد خود را دارد.
+
+به طور خلاصه، یک کلاس ویژگی های اشیایی را که می توان از آن ایجاد کرد تعریف می کند، در حالی که یک شی نمونه ای از آن کلاس با ویژگی های منحصر به فرد خود است.
+
+جواب 2:
+
+برخی از نام های دیگر به عنوان مثال متغیرها در پایتون عبارتند از:
+
+1. ویژگی های شی
+2. خواص شی
+3. صفات نمونه
+4. خواص نمونه
+5. متغیرهای عضو
+
+پاسخ 3:
+
+تابع.
+
+پاسخ 4:
+
+نماد نقطه (.) یک شی را با فراخوانی متد در پایتون مرتبط می کند.
+
+پاسخ 5:
+
+یک تابع بلوکی از کد است که وظیفه خاصی را انجام می دهد و مقداری را (در صورت لزوم) برمی گرداند.  از طرف دیگر یک متد تابعی است که با یک شی مرتبط است و می تواند به داده های آن دسترسی داشته باشد.
+
+در اینجا چند تفاوت کلیدی بین متدها و توابع در پایتون وجود دارد:
+
+1. نحو: یک تابع با استفاده از کلمه کلیدی "def" به دنبال نام تابع و پارامترها (در صورت وجود) تعریف می شود.  یک متد در داخل یک کلاس با استفاده از همان نحو به عنوان یک تابع تعریف می شود، اما روی نمونه ای از کلاس فراخوانی می شود.
+
+2. محدوده: توابع موجودیت های مستقلی هستند که می توانند از هر جایی در برنامه فراخوانی شوند.  متدها به اشیا محدود می شوند و فقط می توانند در نمونه هایی از آن شیء فراخوانی شوند.
+
+3. دسترسی به داده ها: روش ها به داده های ذخیره شده در ویژگی های یک شی دسترسی دارند، در حالی که توابع اینگونه نیستند.
+
+4. مقدار بازگشتی: هم توابع و هم متدها می توانند مقادیر را برگردانند، اما متدها اغلب وضعیت یک شی را نیز تغییر می دهند.
+
+به طور خلاصه، در حالی که هم توابع و هم متدها وظایف را در پایتون انجام می دهند، متدها مختص اشیا هستند و به داده های آنها دسترسی دارند.
+
+پاسخ 6:
+
+متد strip() نامیده می شود.
+جواب 7:
+
+تابع len() طول آرگومان رشته خود را برمی گرداند.
+
+پاسخ 8:
+
+تابع open در پایتون یک شی فایل را برمی گرداند.
+
+پاسخ 9:
+
+دومین پارامتر تابع open در پایتون نشان دهنده حالتی است که فایل در آن باز می شود.  مشخص می کند که آیا فایل برای خواندن، نوشتن یا هر دو باز می شود.  حالت را می توان با استفاده از رشته ای که شامل یک یا چند کاراکتر زیر است مشخص کرد:
+
+- 'r': حالت خواندن (پیش‌فرض)
+- 'w': حالت نوشتن
+- 'x': حالت ایجاد منحصر به فرد
+- 'a': حالت اضافه کردن
+- 'b': حالت باینری
+- '+': حالت خواندن و نوشتن
+
+به عنوان مثال، برای باز کردن یک فایل برای نوشتن در حالت باینری، از کد زیر استفاده کنید:
+
+
+file = open ('نام فایل', 'wb')
+
+پاسخ 10:
+
+در اینجا کد پایتون برای ذخیره 100 عدد صحیح اول در یک فایل متنی به نام numbers.txt آمده است:
+
+
+# فایل را برای نوشتن باز کنید
+با open("numbers.txt", "w") به صورت f:
+     # 100 عدد صحیح اول را در فایل بنویسید
+     برای i در محدوده (1، 101):
+         f.write(str(i) + "\n")
+
+
+توضیح:
+
+- از تابع open() برای باز کردن فایلی با نام "numbers.txt" در حالت نوشتن ("w") استفاده می کنیم.
+- ما از یک دستور with استفاده می کنیم تا اطمینان حاصل کنیم که فایل پس از اتمام نوشتن در آن به درستی بسته شده است.
+- ما از یک حلقه for برای تکرار در محدوده اعداد صحیح از 1 تا 100 (محدوده (1، 101)) استفاده می کنیم.
+- برای هر عدد صحیح با استفاده از str(i) آن را به یک رشته تبدیل می کنیم و یک کاراکتر خط جدید ("\n") اضافه می کنیم تا هر عدد در خط خودش ظاهر شود.
+- از متد write() شی فایل (f.write()) برای نوشتن هر عدد (به عنوان رشته) در فایل استفاده می کنیم.
+
+پاسخ 11:
+
+def sumfile (نام فایل):
+کل = 0
+با open(نام فایل، 'r') به عنوان فایل:
+برای خط در فایل:
+مجموع += int (خط)
+بازگشت کل
+
+پاسخ 12:
+
+(الف) قند نحوی برای روش فرعی عملگر تفریق (-) است.
+
+(ب) قند نحوی برای روش eq عملگر برابری (==) است.
+
+(C) قند نحوی برای روش neg وقتی قبل از نمونه ای از کلاس Fraction استفاده می شود، عملگر نفی (-) است.
+
+(د) قند نحوی برای روش gt بزرگتر از عملگر (>) است.
+
+/////////
+
+(الف) فرعی: -
+
+(ب) معادله: ==
+
+(ج) نفی: -
+
+(د) gt: >
+
+جواب 13:
+
+استفاده از یک شی Turtle از ماژول گرافیکی Python's Turtle به شما امکان می دهد یک نمونه لاک پشت خاص را ایجاد و دستکاری کنید، در حالی که استفاده از توابع رایگان بر روی نمونه پیش فرض لاک پشت عمل می کند.
+
+به عنوان مثال، اگر یک شی Turtle به نام "t" را با استفاده از کد "t = turtle.Turtle() ایجاد کنید، سپس می توانید از روش هایی مانند "t.penup()" برای برداشتن قلم از روی بوم برای آن خاص استفاده کنید.  نمونه لاک پشت  اگر قرار بود از تابع رایگان "penup()" استفاده کنید، قلم را از روی بوم برای نمونه پیش فرض لاک پشت بلند می کرد.
+
+به طور خلاصه، استفاده از یک شی لاک پشت امکان کنترل و ویژگی بیشتر در دستکاری لاک پشت های فردی را فراهم می کند، در حالی که استفاده از توابع رایگان روی یک نمونه لاک پشت پیش فرض عمل می کند.
+
+پاسخ 14:
+
+رسم شکل در اینجا غیرممکن است، به همین دلیل من کد را می نویسم
+
+کد نمونه:
+
+
+لاک پشت وارداتی
+
+# یک شی لاک پشت ایجاد کنید
+t = turtle.Turtle()
+
+# مربع بکشید
+برای i در محدوده (4):
+     t.forward (100)
+     t.right(90)
+
+# مثلث بکشید
+برای i در محدوده (3):
+     t.forward (100)
+     t.left(120)
+
+# یک دایره بکشید
+t.circle(50)
+
+# یک ستاره بکشید
+برای i در محدوده (5):
+     t.forward (100)
+     t.right(144)
+
+# شی لاک پشت را پنهان کنید
+t.hideturtle()
+
+# پنجره را تا بسته شدن دستی باز نگه دارید
+turtle.done()
+`
+
+با استفاده از ماژول گرافیکی Turtle می توان این کد را برای ترسیم اشکال و الگوهای مختلف تغییر داد
+
+/////
+کد مثلث:
+
+Def turtle():
+     در حالی که درست است:
+         لاک پشت وارداتی
+         t = turtle.Turtle()
+         window = turtle.Screen()
+         t.forward (100)
+         t.left(120)
+         t.forward (100)
+         t.left(120)
+         t.forward (100)
+لاک پشت()
+
+/////
+
+کد دایره:
+
+از واردات لاک پشت*
+رنگ ("قرمز"، "زرد")
+شکل ('لاک پشت')
+سرعت ("سریعترین")
+دایره (100)
+
+////
+
+کد ستاره:
+
+لاک پشت وارداتی
+s=turtle.getscreen ()
+t=لاک پشت.لاک پشت ()
+برای i در محدوده (5):
+       t.fd (200)
+       t.rt(144)
+
+/////
+
+کد مربع:
+
+لاک پشت وارداتی
+t = turtle.Pen()
+t.forward(90)
+t.left(90)
+t.forward(90)
+t.left(90)
+t.forward(90)
+t.left(90)
+t.forward(90)
+t.left(90)
+
+/////
+پاسخ 15:
+
+خیر، رشته های پایتون تغییر ناپذیر هستند، به این معنی که وقتی یک رشته ایجاد می شود، نمی توان آن را تغییر داد.  با این حال، می توانید با به هم پیوستن بخش هایی از رشته اصلی با تغییر مورد نظر، یک رشته جدید ایجاد کنید.
+
+
+پاسخ 16:
+
+اگر یک شی turtle.Turtle در پایتون تغییرناپذیر بود، پس از ایجاد شدن امکان تغییر خصوصیات یا ویژگی های آن وجود نداشت.  این توانایی دستکاری موقعیت، جهت، رنگ و سایر ویژگی های لاک پشت را که برای ایجاد گرافیک و انیمیشن های پیچیده ضروری هستند، محدود می کند.
+
+به عنوان مثال، اگر شی لاک پشت تغییرناپذیر بود، امکان حرکت دادن لاک پشت به جلو یا عقب با استفاده از متدهای ()forward یا backward() وجود نداشت.  به همین ترتیب، تغییر رنگ لاک پشت با استفاده از روش color() یا تغییر اندازه قلم آن با استفاده از روش pensize() امکان پذیر نخواهد بود.
+
+به طور کلی، ساختن یک شی turtle.Turtle غیرقابل تغییر، کاربرد آن را برای ایجاد گرافیک های پویا و تعاملی در پایتون به شدت محدود می کند.  بنابراین، مهم است که اشیاء لاک پشت قابل تغییر باقی بمانند تا بتوان آنها را در صورت نیاز دستکاری و سفارشی کرد.
+
+
+پاسخ 17:
+
+در برنامه نویسی، زباله به فضای حافظه ای اطلاق می شود که دیگر توسط یک برنامه استفاده نمی شود اما به سیستم عامل بازگردانده نشده است.  این می تواند زمانی رخ دهد که یک برنامه اشیا یا متغیرهایی را در حافظه ایجاد کند و دیگر به آنها نیاز نداشته باشد، اما نتواند آنها را به درستی حذف یا آزاد کند.  با گذشت زمان، این می تواند منجر به نشت حافظه شود و باعث کند شدن برنامه یا از کار افتادن آن شود.  جمع آوری زباله فرآیند شناسایی و حذف خودکار حافظه استفاده نشده در یک برنامه است.
+
+پاسخ 18:
+
+
+  جمع آوری زباله فرآیند آزادسازی خودکار حافظه ای است که دیگر توسط یک برنامه استفاده نمی شود.  در پایتون، جمع آوری زباله توسط خود مفسر پایتون مدیریت می شود.  پایتون از تکنیکی به نام شمارش مرجع برای ردیابی اشیا در حافظه استفاده می کند.  جمع‌آوری زباله چرخه‌ای با اسکن دوره‌ای تمام اشیاء موجود در حافظه و شناسایی گروه‌هایی از اشیایی که فقط توسط یکدیگر ارجاع می‌شوند (به عنوان مثال، مراجع چرخه‌ای) کار می‌کند.  سپس این گروه از اشیاء به عنوان زباله علامت گذاری می شوند و می توان آنها را با خیال راحت حذف کرد.
+
+  به طور کلی، سیستم جمع‌آوری زباله پایتون به برنامه‌نویسان اجازه می‌دهد تا بدون نگرانی بیش از حد در مورد مدیریت دستی حافظه، روی نوشتن کد تمرکز کنند.
+مفسر پایتون پاک می شود
+زباله از طریق فرآیندی به نام جمع آوری زباله.  پایتون از یک جمع کننده زباله شمارش مرجع استفاده می کند
+که به طور خودکار فضای اشغال شده توسط اجسام رها شده را بازیابی می کند.
+
+پاسخ 19:
+
+(الف) تعداد مرجع برای شی رشته "ABC" در پایان اجرای این کد 0 است، زیرا هیچ متغیر یا شی ای وجود ندارد که به آن ارجاع دهد.
+
+(B) خیر، b نام مستعار a در پایان اجرای این کد نیست.  وقتی b به a اختصاص داده شد، به همان شی اشاره می کرد که a.  با این حال، هنگامی که a دوباره به "XYZ" اختصاص داده شد، b همچنان به شی قدیمی "ABC" اشاره می کند.  بنابراین، b و a دیگر نام مستعار نیستند.
+
+(C) بله، b نام مستعار c در انتهای اجرای این کد است.  هنگامی که c به b اختصاص داده شد، به همان شیء a اشاره می کرد (که در آن زمان "ABC" بود).  بعداً، وقتی a دوباره به "XYZ" اختصاص یافت، c همچنان به شی قدیمی "ABC" اشاره می کند.  بنابراین، b و c همچنان نام مستعار هستند
+
